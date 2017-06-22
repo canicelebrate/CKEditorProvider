@@ -409,14 +409,16 @@ namespace DNNConnect.CKEditorProvider.Browser
             var jqueryScriptLink = new HtmlGenericControl("script");
 
             jqueryScriptLink.Attributes["type"] = "text/javascript";
-            jqueryScriptLink.Attributes["src"] = "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js";
+            //jqueryScriptLink.Attributes["src"] = "//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js";
+            jqueryScriptLink.Attributes["src"] = "Script/jquery-1.6.4.min.js";
 
             favicon.Controls.Add(jqueryScriptLink);
 
             var jqueryUiScriptLink = new HtmlGenericControl("script");
 
             jqueryUiScriptLink.Attributes["type"] = "text/javascript";
-            jqueryUiScriptLink.Attributes["src"] = "//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js";
+            //jqueryUiScriptLink.Attributes["src"] = "//ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js";
+            jqueryUiScriptLink.Attributes["src"] = "Script/jquery-ui.min-1.11.1.js";
 
             favicon.Controls.Add(jqueryUiScriptLink);
 
@@ -459,7 +461,8 @@ namespace DNNConnect.CKEditorProvider.Browser
 
             objCssLink.Attributes["rel"] = "stylesheet";
             objCssLink.Attributes["type"] = "text/css";
-            objCssLink.Attributes["href"] = "//ajax.googleapis.com/ajax/libs/jqueryui/1/themes/blitzer/jquery-ui.css";
+            //objCssLink.Attributes["href"] = "//ajax.googleapis.com/ajax/libs/jqueryui/1/themes/blitzer/jquery-ui.css";
+            objCssLink.Attributes["href"] = "Content/themes/blitzer/jquery-ui.blitzer.css";
 
             favicon.Controls.Add(objCssLink);
 
